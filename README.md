@@ -1,7 +1,5 @@
 # wpLogicNet
-
 library(wpLogicNet)
-################################################################################
 # wpLogicNet: both logic gate and structure inference 
 expression_data<- data_normalization(data$SOS1)
 res            <- wpLogicNet(data = expression_data, density = "laplace", scale = 0.00071, number_of_em_iterations = 15, BF_threshold = 11)
